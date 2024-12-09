@@ -35,6 +35,7 @@ public class BuildingAPI {
 			                             @RequestParam(name = "districtid", required = false) Long district,
 			                             @RequestParam(name = "typeCode", required = false) List<String> typeCode){
 		List<BuildingDTO> result = buildingService.findAll(name, district);
+		//test
 		return result;
 		
 	}
